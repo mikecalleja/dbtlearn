@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -19,3 +18,11 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: orders
+      description: "Orders fact table"
+      columns:
+            - name: total_basket_value
+              description: "Total basket value against a order ID"
+              tests:
+                - not_null 
+              
